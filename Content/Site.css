@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Wingtip Toys - Site.css (Classic Web Forms Theme)
+   ========================================================================== */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333333;
+    background-color: #fcfcfc;
+}
+
+/* Container */
+.body-content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header & Brand */
+#HeaderImage {
+    margin-bottom: 20px;
+}
+
+#CategoryMenu {
+    text-align: center;
+    background: #222;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+#CategoryMenu a {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 18px;
+    display: inline-block;
+}
+
+#CategoryMenu a:hover {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+/* Product Catalog Grid */
+.product-grid-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.product-item-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.product-thumb {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.product-title {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #0d6efd;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.product-price-tag {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 10px;
+}
+
+.btn-add-cart {
+    background-color: #0d6efd;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.btn-add-cart:hover {
+    background-color: #0b5ed7;
+    color: #ffffff;
+}
+
+/* Details Page */
+.details-wrapper {
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-top: 20px;
+}
+
+.details-image-box img {
+    max-width: 320px;
+    border-radius: 8px;
+}
+
+.details-info-box h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.details-desc {
+    font-size: 1.1em;
+    color: #555;
+    margin: 15px 0;
+}
+
+.details-price-value {
+    font-size: 1.5em;
+    color: #198754;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: #6c757d;
+}

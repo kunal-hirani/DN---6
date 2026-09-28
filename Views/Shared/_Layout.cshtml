@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Product Catalog</title>
+</head>
+<body>
+    <header>
+        <h2>Product Catalog Application</h2>
+        <nav>
+            <a asp-controller="Product" asp-action="Index">Product List</a> |
+            <a asp-controller="Product" asp-action="Create">Add New Product</a>
+        </nav>
+        <hr />
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <hr />
+        <p>&copy; @DateTime.Now.Year - Product Catalog Application (ASP.NET MVC Architecture)</p>
+    </footer>
+</body>
+</html>

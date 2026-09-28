@@ -1,0 +1,45 @@
+@model ProductCatalog.Models.Product
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h1>Edit Product</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ProductId" />
+
+    <table cellpadding="6">
+        <tr>
+            <td><label asp-for="ProductId">Product ID:</label></td>
+            <td><strong>@Model.ProductId</strong></td>
+        </tr>
+        <tr>
+            <td><label asp-for="ProductName">Product Name:</label></td>
+            <td><input asp-for="ProductName" required /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Category">Category:</label></td>
+            <td><input asp-for="Category" required /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Price">Price ($):</label></td>
+            <td><input asp-for="Price" type="number" step="0.01" min="0" required /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="StockQuantity">Stock Quantity:</label></td>
+            <td><input asp-for="StockQuantity" type="number" min="0" required /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Description">Description:</label></td>
+            <td><textarea asp-for="Description" rows="4" cols="40" required></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Update Product" />
+                <a asp-action="Index">Cancel</a>
+            </td>
+        </tr>
+    </table>
+</form>

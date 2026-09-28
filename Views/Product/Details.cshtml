@@ -1,0 +1,40 @@
+@model ProductCatalog.Models.Product
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<h1>Product Details</h1>
+
+<table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <th>Product ID</th>
+        <td>@Model.ProductId</td>
+    </tr>
+    <tr>
+        <th>Product Name</th>
+        <td>@Model.ProductName</td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td>@Model.Description</td>
+    </tr>
+    <tr>
+        <th>Category</th>
+        <td>@Model.Category</td>
+    </tr>
+    <tr>
+        <th>Price ($)</th>
+        <td>@Model.Price.ToString("0.00")</td>
+    </tr>
+    <tr>
+        <th>Stock Quantity</th>
+        <td>@Model.StockQuantity</td>
+    </tr>
+</table>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.ProductId">Edit</a> |
+    <a asp-action="Delete" asp-route-id="@Model.ProductId">Delete</a> |
+    <a asp-action="Index">Back to Products</a>
+</p>
